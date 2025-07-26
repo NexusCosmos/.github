@@ -1,0 +1,34 @@
+name: "✨ Feature Request"
+description: "Suggest new module or capability"
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    attributes:
+      label: "Problem Statement"
+      placeholder: "What scientific gap does this fill?"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Proposed Solution"
+      placeholder: "Describe your ideal implementation"
+
+  - type: dropdown
+    attributes:
+      label: "Module Type"
+      options:
+        - Star system
+        - Planetary body
+        - Debris field
+        - AI model
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: "Related Data Sources"
+      options:
+        - label: NASA Horizons
+        - label: ESA Space Debris
+        - label: SIMBAD Astronomical Database
