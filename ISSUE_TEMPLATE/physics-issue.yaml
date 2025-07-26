@@ -1,1 +1,21 @@
-
+name: Physics Issue
+description: Orbital mechanics/gravity problems
+title: "[PHYSICS] "
+labels: ["physics"]
+body:
+  - type: textarea
+    id: equations
+    attributes:
+      label: Affected Equations
+      placeholder: "List physics formulas involved"
+      
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - Gravitational Systems
+        - Atmospheric Models
+        - Orbital Dynamics
+    validations:
+      required: true
