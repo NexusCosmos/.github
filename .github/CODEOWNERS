@@ -1,6 +1,0 @@
-# Defines responsibility areas
-* @TheVishalKumar369  # Global owner
-
-/src/physics/ @physics-team
-/src/ai/      @ml-team
-.github/      @devops-team
