@@ -4,31 +4,36 @@ title: "[FEATURE] "
 labels: ["enhancement"]
 body:
   - type: textarea
+    id: problem
     attributes:
       label: "Problem Statement"
       placeholder: "What scientific gap does this fill?"
     validations:
-      required: true
+      required: true  # CORRECTED SYNTAX
 
   - type: textarea
+    id: solution
     attributes:
       label: "Proposed Solution"
       placeholder: "Describe your ideal implementation"
 
   - type: dropdown
+    id: module-type
     attributes:
       label: "Module Type"
       options:
-        - Star system
-        - Planetary body
-        - Debris field
-        - AI model
+        - "Star system"
+        - "Planetary body"
+        - "Debris field"
+        - "AI model"
+    validations:
       required: true
 
   - type: checkboxes
+    id: sources
     attributes:
       label: "Related Data Sources"
       options:
-        - label: NASA Horizons
-        - label: ESA Space Debris
-        - label: SIMBAD Astronomical Database
+        - label: "NASA Horizons"
+        - label: "ESA Space Debris"
+        - label: "SIMBAD Astronomical Database"
