@@ -1,0 +1,114 @@
+    name: "🐛 Bug Report" 
+    description: "Report unexpected behavior in physics/AI systems"
+    title: "[BUG] "  
+    labels: ["bug", "needs-triage"]  
+    body:
+      # ===== SECTION 1: PRE-SUBMISSION CHECKLIST =====
+      - type: markdown
+        attributes:
+          value: |
+            ### ⚠️ Before Reporting
+            - [ ] I've searched [existing issues](https://github.com/NexusCosmos/nexus-core/issues?q=label%3Abug)
+            - [ ] I've checked our [Discussions](https://github.com/NexusCosmos/nexus-core/discussions)
+            - [ ] This isn't a duplicate
+    
+      # ===== SECTION 2: CORE PROBLEM DESCRIPTION =====
+      - type: textarea
+        id: expected-behavior
+        attributes:
+          label: "✅ Expected Behavior"
+          description: "What should've happened scientifically?"
+          placeholder: "Ex: Earth's orbit should follow Kepler's laws at 1 AU"
+        validations:
+          required: true
+    
+      - type: textarea
+        id: actual-behavior
+        attributes:
+          label: "❌ Actual Behavior"
+          description: "What's happening instead? Include error messages."
+          placeholder: "Ex: Earth drifts 0.01 AU after 100 simulated years"
+        validations:
+          required: true
+    
+      # ===== SECTION 3: REPRODUCTION STEPS =====
+      - type: textarea
+        id: reproduction-steps
+        attributes:
+          label: "🔧 Steps to Reproduce"
+          description: "Be precise! Module versions, API calls, parameters"
+          placeholder: |
+            1. Load module: `Sol:Earth@v1.2`
+            2. Set initial conditions: `{t0: 2050-01-01, timestep: 86400s}`
+            3. Run: `simulate(100_years)`
+            4. Observe position with `get_position()`
+        validations:
+          required: true
+    
+      # ===== SECTION 4: CONTEXT =====
+      - type: dropdown
+        id: affected-module
+        attributes:
+          label: "📦 Affected Module"
+          options:
+            - "Stars"
+            - "Planets"
+            - "Debris Fields"
+            - "AI Models"
+            - "Core Engine"
+          default: "Planets"
+        validations:
+          required: true
+    
+      - type: checkboxes
+        id: environment
+        attributes:
+          label: "💻 Environment"
+          description: "Check all that apply"
+          options:
+            - label: "OS: Windows"
+            - label: "OS: macOS"
+            - label: "OS: Linux"
+            - label: "Browser: Chrome"
+            - label: "Browser: Firefox"
+            - label: "Running in Docker"
+    
+      - type: textarea
+        id: versions
+        attributes:
+          label: "🔢 Version Information"
+          placeholder: |
+            - Nexus Core: 0.3.1
+            - Earth Module: 1.2.0
+            - Python: 3.11
+    
+      # ===== SECTION 5: SEVERITY & VISUAL PROOF =====
+      - type: dropdown
+        id: severity
+        attributes:
+          label: "🔥 Severity Impact"
+          description: "How critical is this?"
+          options:
+            - "🚨 Crash/Data Loss"
+            - "⚠️ Major Functionality Broken"
+            - "🐞 Minor Visual Glitch"
+            - "📝 Documentation Issue"
+          default: "⚠️ Major Functionality Broken"
+    
+      - type: textarea
+        id: screenshots
+        attributes:
+          label: "🖼️ Screenshots/Logs"
+          placeholder: "Paste error logs or link to screenshots"
+    
+      # ===== SECTION 6: FINAL VALIDATION =====
+      - type: checkboxes
+        id: confirmations
+        attributes:
+          label: "🔒 Final Checks"
+          options:
+            - label: "I've included minimal reproduction steps"
+              required: true
+            - label: "This issue isn't related to my local setup"
+            - label: "I agree to follow the Code of Conduct"
+              required: true
