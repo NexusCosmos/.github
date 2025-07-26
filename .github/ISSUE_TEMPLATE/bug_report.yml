@@ -14,35 +14,46 @@ body:
           required: true
 
   - type: textarea
+    id: expected
     attributes:
       label: "Expected Behavior"
       placeholder: "Scientific expectation"
     validations:
-      required: true
+      required: true  # CORRECTED SYNTAX
 
   - type: textarea
+    id: actual
     attributes:
       label: "Actual Behavior"
       placeholder: "What's happening instead?"
+    validations:
+      required: true  # CORRECTED SYNTAX
 
   - type: textarea
+    id: steps
     attributes:
       label: "Steps to Reproduce"
       placeholder: |
         1. Load module: `Sol:Earth`
         2. Run command: `simulate(100_years)`
         3. Observe position
+    validations:
+      required: true
 
   - type: dropdown
+    id: system
     attributes:
       label: "Affected System"
       options:
-        - Physics engine
-        - AI prediction
-        - 3D rendering
+        - "Physics engine"
+        - "AI prediction"
+        - "3D rendering"
+    validations:
       required: true
 
   - type: input
+    id: version
     attributes:
       label: "Version"
       placeholder: "nexus-core@0.3.1"
+      value: "0.1.0"  # Default value
