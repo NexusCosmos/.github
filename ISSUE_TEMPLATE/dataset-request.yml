@@ -1,0 +1,16 @@
+name: Dataset Request
+description: Missing astronomical data
+title: "[DATA] "
+labels: ["data"]
+body:
+  - type: textarea
+    id: object
+    attributes:
+      label: Celestial Object
+      placeholder: "Ex: Oumuamua, Trappist-1e"
+      
+  - type: textarea
+    id: sources
+    attributes:
+      label: Known Data Sources
+      placeholder: "NASA links, research papers"
