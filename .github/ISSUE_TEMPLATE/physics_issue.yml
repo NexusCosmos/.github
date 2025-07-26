@@ -1,0 +1,23 @@
+name: "Physics Issue"
+description: "Orbital mechanics/gravity problems"
+title: "[PHYSICS] "
+labels: ["physics"]
+body:
+  - type: textarea
+    attributes:
+      label: "Affected Equations"
+      placeholder: "LaTeX or text description"
+      value: |
+        ```latex
+        F = G\frac{m_1m_2}{r^2}
+        ```
+
+  - type: textarea
+    attributes:
+      label: "Expected vs Actual Results"
+      placeholder: "Numerical comparison"
+
+  - type: input
+    attributes:
+      label: "Simulation Timestep"
+      placeholder: "e.g., 86400 seconds"
