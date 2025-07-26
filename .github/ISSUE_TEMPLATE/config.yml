@@ -1,12 +1,11 @@
-# .github/ISSUE_TEMPLATE/config.yml
-blank_issues_enabled: false  # Force users to use templates
+blank_issues_enabled: false
 contact_links:
-  - name: ❓ Ask a Question
+  - name: 🚀 Get Help
     url: https://github.com/NexusCosmos/nexus-core/discussions
-    about: Get help in our Discussions forum
-  - name: 📝 Request New Module
-    url: https://github.com/NexusCosmos/module-registry/issues/new?template=module_request.md
-    about: Propose a new celestial module
-  - name: 🐞 Report Security Issue
-    url: https://github.com/NexusCosmos/security
-    about: Responsibly disclose vulnerabilities
+    about: Ask questions in our Discussions forum
+  - name: 💡 Request New Module
+    url: https://github.com/NexusCosmos/nexus-core/issues/new?assignees=&labels=module&template=feature_request.yml
+    about: Propose a new celestial body module
+  - name: 🛡️ Security Vulnerability
+    url: https://github.com/NexusCosmos/.github/security/policy
+    about: Responsibly disclose security issues
