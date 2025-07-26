@@ -1,2 +1,2 @@
 <br>#🌌 Welcome to Nexus Cosmos<br>**Open-source modular space simulation**<br> An open source ecosystem where users collaboratively simulate, predict and visualize space-using modular AI-driven physics modules. <br> This is not only a piece of software but a new language and paradigm for coding universe. <br> This is for the space democracy and making is avalable to everyone.<br> Imagine GitHub meeting an unreal engine or living in a digital unviverse. <b>NexusCosmos</b> is combinaion of it. <br><br> The platform that will create platform>
- 
+ <br><br>Future scope<br>To include other domains of natural science
