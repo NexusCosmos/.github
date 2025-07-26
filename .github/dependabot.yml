@@ -1,11 +1,12 @@
 version: 2
 updates:
-  - package-ecosystem: "pip"
-    directory: "/"
+  - package-ecosystem: "pip"  # For Python
+    directory: "/"            # Root directory
     schedule:
       interval: "weekly"
-      
-  - package-ecosystem: "github-actions"
-    directory: "/.github/workflows"
+    open-pull-requests-limit: 10
+
+  - package-ecosystem: "github-actions"  # Corrected name
+    directory: "/.github/workflows"      # Corrected path
     schedule:
       interval: "monthly"
