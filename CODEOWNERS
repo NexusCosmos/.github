@@ -1,0 +1,6 @@
+# Defines responsibility areas
+* @yourusername  # Global owner
+
+/src/physics/ @physics-team
+/src/ai/      @ml-team
+.github/      @devops-team
